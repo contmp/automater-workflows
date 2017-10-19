@@ -268,14 +268,26 @@
 	repeat with fileId from 1 to count of fileList
 		tell application "System Events"
 
-			set fileAlis to item fileId of fileList -- Typ: alis
-			set fileName to name of fileAlis -- Typ: ctxt
-			set fileContainer to container of fileAlis -- Typ: cfol
-			set fileDir to POSIX path of fileContainer -- Typ: ctxt
-			set destination to make new folder at fileContainer with properties {name:(fileName &amp; " (Einzelseiten)")}
-			set destinationPath to POSIX path of destination
+			set listSize to count of fileList
+			set dateString to ((current date) as string)
 
-			copy destinationPath to end of containerPaths
+			set fileAlis to item fileId of fileList -- alis
+			set fileName to name of fileAlis -- ctxt
+			set fileContainer to container of fileAlis -- cfol
+			set fileDir to POSIX path of fileContainer -- ctxt
+
+			if listSize &gt; 1 then
+				set destination to make new folder at fileContainer with properties {name:("PDF Splitter Einzelseiten (" &amp; dateString &amp; ")")}
+				set destinationPath to POSIX path of destination
+
+				copy destinationPath to end of containerPaths
+			else
+				set destination to make new folder at fileContainer with properties {name:(fileName &amp; " (Einzelseiten)")}
+				set destinationPath to POSIX path of destination
+
+				copy destinationPath to end of containerPaths
+			end if
+
 		end tell
 	end repeat
 	return containerPaths
