@@ -1,4 +1,4 @@
 # Ausgewählte Datei verstecken
 
 __Preview__
-![Preview.png](https://github.com/contmp/automater-workflows/blob/master/Hide%20File/Hide%20File.workflow/Contents/QuickLook/Preview.png?raw=true)
+![Preview.png](https://raw.githubusercontent.com/contmp/automater-workflows/master/Hide%20File/Hide%20File.workflow/Contents/QuickLook/Thumbnail.png)
