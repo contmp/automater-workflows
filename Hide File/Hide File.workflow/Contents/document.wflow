@@ -21,110 +21,6 @@
 					<true/>
 					<key>Types</key>
 					<array>
-						<string>com.apple.cocoa.path</string>
-					</array>
-				</dict>
-				<key>AMActionVersion</key>
-				<string>1.1.2</string>
-				<key>AMApplication</key>
-				<array>
-					<string>Finder</string>
-				</array>
-				<key>AMParameterProperties</key>
-				<dict>
-					<key>fileNames</key>
-					<dict/>
-				</dict>
-				<key>AMProvides</key>
-				<dict>
-					<key>Container</key>
-					<string>List</string>
-					<key>Types</key>
-					<array>
-						<string>com.apple.cocoa.path</string>
-					</array>
-				</dict>
-				<key>ActionBundlePath</key>
-				<string>/System/Library/Automator/Get Specified Finder Items.action</string>
-				<key>ActionName</key>
-				<string>Angegebene Finder-Objekte abfragen</string>
-				<key>ActionParameters</key>
-				<dict>
-					<key>fileNames</key>
-					<array>
-						<string>~/Desktop/Bildschirmfoto 2018-07-29 um 21.27.21.png</string>
-					</array>
-				</dict>
-				<key>BundleIdentifier</key>
-				<string>com.apple.Automator.SpecifiedFiles</string>
-				<key>CFBundleVersion</key>
-				<string>1.1.2</string>
-				<key>CanShowSelectedItemsWhenRun</key>
-				<false/>
-				<key>CanShowWhenRun</key>
-				<true/>
-				<key>Category</key>
-				<array>
-					<string>AMCategoryFilesAndFolders</string>
-				</array>
-				<key>Class Name</key>
-				<string>SpecifiedFilesAction</string>
-				<key>InputUUID</key>
-				<string>2BC70FD4-8FD1-4D35-B746-AC05F2EB9212</string>
-				<key>Keywords</key>
-				<array>
-					<string>Datei</string>
-					<string>Auswählen</string>
-					<string>Suchen</string>
-					<string>Abfragen</string>
-				</array>
-				<key>OutputUUID</key>
-				<string>A180CC33-8328-450B-840E-E2703786B764</string>
-				<key>UUID</key>
-				<string>BB31EC32-902D-44CE-A048-3981486E50ED</string>
-				<key>UnlocalizedApplications</key>
-				<array>
-					<string>Finder</string>
-				</array>
-				<key>arguments</key>
-				<dict>
-					<key>0</key>
-					<dict>
-						<key>default value</key>
-						<array/>
-						<key>name</key>
-						<string>fileNames</string>
-						<key>required</key>
-						<string>0</string>
-						<key>type</key>
-						<string>0</string>
-						<key>uuid</key>
-						<string>0</string>
-					</dict>
-				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
-				<key>isViewVisible</key>
-				<true/>
-				<key>location</key>
-				<string>540.500000:488.000000</string>
-				<key>nibPath</key>
-				<string>/System/Library/Automator/Get Specified Finder Items.action/Contents/Resources/Base.lproj/main.nib</string>
-			</dict>
-			<key>isViewVisible</key>
-			<true/>
-		</dict>
-		<dict>
-			<key>action</key>
-			<dict>
-				<key>AMAccepts</key>
-				<dict>
-					<key>Container</key>
-					<string>List</string>
-					<key>Optional</key>
-					<true/>
-					<key>Types</key>
-					<array>
 						<string>com.apple.cocoa.string</string>
 					</array>
 				</dict>
@@ -200,7 +96,7 @@
 				<key>OutputUUID</key>
 				<string>6B7A4D44-8D5B-4E3C-81A9-22E5CD0B48B5</string>
 				<key>ShowWhenRun</key>
-				<true/>
+				<false/>
 				<key>UUID</key>
 				<string>374D2D57-9143-4681-8ADA-D7065B175DC2</string>
 				<key>UnlocalizedApplications</key>
@@ -275,12 +171,10 @@
 						<string>4</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>540.500000:851.000000</string>
+				<string>599.000000:305.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/German.lproj/main.nib</string>
 			</dict>
@@ -289,15 +183,7 @@
 		</dict>
 	</array>
 	<key>connectors</key>
-	<dict>
-		<key>3FF1E663-BD6F-48AE-908F-2379D55471D7</key>
-		<dict>
-			<key>from</key>
-			<string>BB31EC32-902D-44CE-A048-3981486E50ED - BB31EC32-902D-44CE-A048-3981486E50ED</string>
-			<key>to</key>
-			<string>374D2D57-9143-4681-8ADA-D7065B175DC2 - 374D2D57-9143-4681-8ADA-D7065B175DC2</string>
-		</dict>
-	</dict>
+	<dict/>
 	<key>workflowMetaData</key>
 	<dict>
 		<key>serviceApplicationBundleID</key>
